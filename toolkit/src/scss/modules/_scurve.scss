@@ -1,0 +1,124 @@
+.scurve {
+  margin-bottom: rem(40px);
+  margin-top: rem(40px);
+
+  @include mq(tablet) {
+    margin-bottom: rem(120px);
+    margin-top: rem(120px);
+  }
+
+  .scurve-card {
+    &:nth-child(even) {
+      flex-direction: row-reverse;
+    }
+  }
+}
+
+.scurve-card {
+  @include mq(tablet) {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  & + .scurve-card {
+    margin-top: rem(40px);
+
+    @include mq(tablet) {
+      margin-top: rem(100px);
+    }
+  }
+}
+
+.scurve-card__content {
+  margin-bottom: rem(20px);
+
+  a {
+    color: color("elf-green");
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  @include mq(tablet) {
+    margin-bottom: 0;
+    width: calc(50% - #{rem(40px)});
+  }
+}
+
+.scurve-card__description {
+  em {
+    background-color: color("wild-sand");
+    border-radius: rem(5px);
+    display: inline-block;
+    margin: rem(0 2px);
+    padding: rem(1px 6px);
+  }
+}
+
+.scurve-card__image {
+  background-color: color("white");
+  box-shadow: rem(0 3px 15px -3px) color("tundora");
+  display: flex;
+  padding: rem(10px);
+
+  @include mq(tablet) {
+    width: calc(50% - #{rem(40px)});
+  }
+
+  picture,
+  img {
+    height: auto;
+    width: 100%;
+  }
+}
+
+.scurve-card__image--squared {
+  max-width: rem(350px);
+}
+
+.scurve-card__url {
+  background-color: color("wild-sand");
+  border-radius: rem(5px);
+  font-size: rem(14px);
+  padding: rem(10px 20px);
+  text-align: left;
+
+  @include mq(tablet) {
+    font-size: rem(16px);
+  }
+
+  a {
+    color: color("elf-green");
+    text-decoration: none;
+  }
+}
+
+.scurve-card__code {
+  pre {
+    background-color: color("white");
+    box-shadow: rem(0 3px 15px -3px) color("tundora");
+    display: flex;
+    margin: 0;
+    padding: rem(10px);
+
+    & + pre {
+      margin-top: rem(15px);
+    }
+  }
+
+  code {
+    opacity: 0;
+    width: 100%;
+  }
+
+  .hljs {
+    opacity: 1 !important;
+    padding: 0;
+  }
+
+  @include mq(tablet) {
+    width: calc(50% - #{rem(40px)});
+  }
+}

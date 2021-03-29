@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset=utf-8>
+  <meta content="IE=edge" http-equiv=X-UA-Compatible>
+  <meta name="viewport" content="initial-scale=1.0, maximum-scale=1, width=device-width, user-scalable=no" />
+
+  <title>Verndale: build tools - <%= version %></title>
+
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
+  <link rel=stylesheet href="/css/template.css">
+</head>
+<body>
+<div role="main">
+  <!-- Header -->
+  <header class="header">
+    <img class="header__logo" src="/images/logo-verndale.png" />
+    <div class="header__version">v<%= version %></div>
+  </header>
+
+  <!-- Templates -->
+  <div class="templates container">
+    <h2 class="templates__title">Templates</h2>
+    <ul class="templates__list">
+      <% for(let i = 0; i < data.length; i++) { %>
+      <% const page = data[i] %>
+      <li class="templates__list-item">
+        <a href="./html/templates/<%= page %>.html"><%= page %></a>
+      </li>
+      <% } %>
+    </ul>
+  </div>
+
+  <div class="templates container">
+    <h2 class="templates__title">ESLint Report</h2>
+    <ul class="templates__list">
+      <li class="templates__list-item">
+        <a href="./report-results.html">Report results</a>
+      </li>
+    </ul>
+  </div>
+</div>
+</body>
+</html>

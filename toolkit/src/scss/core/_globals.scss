@@ -1,0 +1,32 @@
+html {
+  @include rem-baseline;
+}
+
+* {
+  box-sizing: border-box !important;
+
+  &:before,
+  &:after {
+    box-sizing: border-box;
+  }
+}
+
+body {
+  color: color("tundora");
+  font-family: $primary-font;
+}
+
+p {
+  font-size: rem(16px);
+  line-height: rem(24px);
+}
+
+.container {
+  margin: 0 auto;
+  max-width: rem($max-width);
+  padding: (0 20px);
+
+  @include mq(desktop) {
+    padding: (0 120px);
+  }
+}

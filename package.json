@@ -1,0 +1,21 @@
+{
+  "name": "verndale-image-generator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "hbs": "^4.1.1",
+    "node-fetch": "^2.6.1",
+    "nodemon": "^2.0.7",
+    "unsplash-js": "^7.0.3"
+  }
+}

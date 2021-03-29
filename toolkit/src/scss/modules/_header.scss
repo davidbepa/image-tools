@@ -1,0 +1,38 @@
+.header {
+  padding-bottom: rem(8px);
+  padding-top: rem(10px);
+
+  @include mq(tablet) {
+    padding-bottom: rem(15px);
+    padding-top: rem(15px);
+  }
+}
+
+.header__logo {
+  align-items: center;
+  color: color("cod-gray");
+  display: flex;
+
+  span {
+    display: inline-flex;
+    font-family: $secondary-font;
+    font-size: rem(20px);
+    margin-right: rem(5px);
+    padding-bottom: rem(5px);
+
+    @include mq(tablet) {
+      font-size: rem(22px);
+      margin-right: rem(8px);
+      padding-bottom: rem(7px);
+    }
+  }
+
+  img {
+    height: auto;
+    width: rem(120px);
+
+    @include mq(tablet) {
+      width: rem(160px);
+    }
+  }
+}

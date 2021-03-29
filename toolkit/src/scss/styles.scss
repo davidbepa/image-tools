@@ -1,0 +1,19 @@
+//Main entry
+
+//Core
+@import
+"../../node_modules/normalize.css/normalize",
+"core/colorpalette",
+"../../node_modules/@verndale/color-palette/colors",
+"core/variables",
+"../../node_modules/sass-mq/mq",
+"../../node_modules/sass-rem/rem",
+"core/typography",
+"core/globals",
+"../../node_modules/highlight.js/scss/atom-one-dark";
+
+//Components
+@import "components/**/*";
+
+//Modules
+@import "modules/**/*";

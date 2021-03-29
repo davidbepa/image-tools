@@ -1,0 +1,13 @@
+// sass-rem
+$rem-baseline: 16px;
+
+// sass-mq
+$mq-breakpoints: (
+  mobile:  360px,
+  phablet:  576px,
+  tablet:  740px,
+  desktop: 1280px,
+  wide:    1440px
+);
+
+$max-width: 1600px;

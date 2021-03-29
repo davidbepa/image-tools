@@ -1,0 +1,37 @@
+.intro {
+  background-color: color("wild-sand");
+  padding: rem(40px 0);
+  text-align: center;
+
+  @include mq(tablet) {
+    padding: rem(100px 0);
+  }
+
+  .container {
+    max-width: rem(840px);
+  }
+}
+
+.intro__title {
+
+}
+
+.intro__description {
+
+}
+
+.intro__url {
+  background-color: color("white");
+  border-radius: rem(5px);
+  font-size: rem(14px);
+  padding: rem(10px 20px);
+
+  @include mq(tablet) {
+    font-size: rem(16px);
+  }
+
+  a {
+    color: color("elf-green");
+    text-decoration: none;
+  }
+}

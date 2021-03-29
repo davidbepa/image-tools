@@ -1,0 +1,44 @@
+//Typography
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap');
+
+// Font variables
+$primary-font: "Open Sans", sans-serif;
+$secondary-font: "Barlow Condensed", sans-serif;
+
+//Heading map
+$headings: (
+  (h1, 38px, 1em),
+  (h2, 32px, 1em),
+  (h3, 24px, 1em),
+  (h4, 20px, 1.5em),
+  (h5, 16px, 1.5em),
+  (h6, 14px, 1.5em)
+);
+
+h1 {
+  font-family: $secondary-font;
+  font-size: rem(38px);
+  line-height: 1;
+  margin-bottom: rem(10px);
+  margin-top: 0;
+
+  @include mq(tablet) {
+    font-size: rem(48px);
+    line-height: 1.05;
+    margin-bottom: rem(15px);
+  }
+}
+
+h2 {
+  font-family: $secondary-font;
+  font-size: rem(28px);
+  line-height: 1;
+  margin-bottom: rem(10px);
+  margin-top: 0;
+
+  @include mq(tablet) {
+    font-size: rem(32px);
+    line-height: 1.05;
+  }
+}

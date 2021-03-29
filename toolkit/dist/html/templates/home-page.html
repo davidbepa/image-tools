@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta content="IE=edge" http-equiv="X-UA-Compatible">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Home page</title>
+  
+    <style>@import url(https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700&display=swap);@import url(https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap);html{line-height:1.15;-webkit-text-size-adjust:100%}body{margin:0}h1{font-size:2em;margin:.67em 0}pre{font-family:monospace,monospace;font-size:1em}a{background-color:transparent}img{border-style:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}h1{font-family:"Barlow Condensed",sans-serif;font-size:2.375rem;line-height:1;margin-bottom:.625rem;margin-top:0}@media (min-width:46.25em){h1{font-size:3rem;line-height:1.05;margin-bottom:.9375rem}}html{font-size:100%}*{-webkit-box-sizing:border-box!important;box-sizing:border-box!important}:after,:before{-webkit-box-sizing:border-box;box-sizing:border-box}body{color:#4a4a4a;font-family:"Open Sans",sans-serif}p{font-size:1rem;line-height:1.5rem}.container{margin:0 auto;max-width:100rem;padding:0 20px}@media (min-width:80em){.container{padding:0 120px}}.generic-content{margin-bottom:5rem;margin-top:5rem}@media (min-width:46.25em){.generic-content{margin-bottom:10rem;margin-top:7.5rem}}.generic-content .container{max-width:68.75rem}.generic-content__image{background-color:#fff;-webkit-box-shadow:0 .1875rem .9375rem -.1875rem #4a4a4a;box-shadow:0 .1875rem .9375rem -.1875rem #4a4a4a;display:-webkit-box;display:-ms-flexbox;display:flex;margin:0 auto 2.1875rem;max-width:43.75rem;padding:.625rem}@media (min-width:46.25em){.generic-content__image{margin-bottom:3.125rem}}.generic-content__image img,.generic-content__image picture{height:auto;width:100%}.generic-content__description{font-size:1.25rem;text-align:center}.generic-content__description a{color:#06847b}.generic-content__description p{font-size:1.125rem;line-height:1.8125rem}@media (min-width:46.25em){.generic-content__description p{font-size:1.25rem;line-height:2.125rem}}.header{padding-bottom:.5rem;padding-top:.625rem}@media (min-width:46.25em){.header{padding-bottom:.9375rem;padding-top:.9375rem}}.header__logo{-webkit-box-align:center;-ms-flex-align:center;align-items:center;color:#121212;display:-webkit-box;display:-ms-flexbox;display:flex}.header__logo span{display:-webkit-inline-box;display:-ms-inline-flexbox;display:inline-flex;font-family:"Barlow Condensed",sans-serif;font-size:1.25rem;margin-right:.3125rem;padding-bottom:.3125rem}@media (min-width:46.25em){.header__logo span{font-size:1.375rem;margin-right:.5rem;padding-bottom:.4375rem}}.header__logo img{height:auto;width:7.5rem}@media (min-width:46.25em){.header__logo img{width:10rem}}.intro{background-color:#f5f5f5;padding:2.5rem 0;text-align:center}@media (min-width:46.25em){.intro{padding:6.25rem 0}}.intro .container{max-width:52.5rem}.intro__url{background-color:#fff;border-radius:.3125rem;font-size:.875rem;padding:.625rem 1.25rem}@media (min-width:46.25em){.intro__url{font-size:1rem}}.intro__url a{color:#06847b;text-decoration:none}</style>
+  <link href="https://fonts.googleapis.com/css?family=Questrial" rel="stylesheet" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="/css/styles.css" media="print" onload="this.media='all'">
+</head>
+<body>
+  <header class="header container">
+    <div class="header__logo">
+      <span>Image Tools</span>
+      <a href="/">
+        <img src="/images/logo-verndale.png" alt="Verndale">
+      </a>
+    </div>
+  </header>
+
+  <section role="main">
+    <div class="intro">
+      <div class="container">
+        <h1 class="intro__title">Get random images that fit your designs</h1>
+        <p class="intro__description">Call the random service adding the query of interest and pass the dessired dimensions (width & height) as parameters:</p>
+        <pre class="intro__url"><a href="//localhost:8080/random/pizza?w=200&h=300" target="_blank">//localhost:8080/random/pizza?w=200&h=300</a></pre>
+      </div>
+    </div>
+    <div class="generic-content">
+      <div class="container">
+        <div class="generic-content__image">
+          <picture>
+            <source srcset="//localhost:8080/id/Wz3u9_GtkWc?w=840&h=500&seed=0&format=webp" type="image/webp">
+            <img src="//localhost:8080/id/Wz3u9_GtkWc?w=840&h=500&seed=0" alt="pizza for example" width="840" height="500">
+          </picture>
+        </div>
+        <div class="generic-content__description">
+          <p>Get random images provided by <a href="https://unsplash.com/">Unplash</a> to help you build your templates. This tool provides three endpoints to get a random image based on a query, or find one by it's Unplash id.</p>
+        </div>
+      </div>
+    </div>
+    <div class="scurve container">
+      <div class="scurve-card">
+        <div class="scurve-card__content">
+          <h2 class="scurve-card__title">Basic usage</h2>
+          <p class="scurve-card__description">To get an image based on a desired query, call the <em>/random</em> endpont appended by the query. If you want to get the image in an specific size, pass the width and the height as parameters.</p>
+          <pre class="scurve-card__url"><a href="//localhost:8080/random/pizza?w=500&h=300" target="_blank">//localhost:8080/random/pizza?w=500&h=300</a></pre>
+        </div>
+        <div class="scurve-card__image">
+          <picture>
+            <source srcset="//localhost:8080/random/pizza?w=500&h=300&seed=1&format=webp" type="image/webp">
+            <img src="//localhost:8080/random/pizza?w=500&h=300&seed=1" alt="Image description" loading="lazy" width="500px" height="300px">
+          </picture>
+        </div>
+      </div>
+    
+      <div class="scurve-card">
+        <div class="scurve-card__content">
+          <h2 class="scurve-card__title">Seed</h2>
+          <p class="scurve-card__description">Provide the seed parameter to get always the same image. This can help you keeping consistency when grabbing different sizes depending on media queries.</p>
+          <pre class="scurve-card__url"><a href="//localhost:8080/random/pizza?seed=4" target="_blank">//localhost:8080/random/pizza?seed=4</a></pre>
+        </div>
+        <div class="scurve-card__image">
+          <picture>
+            <source srcset="//localhost:8080/random/pizza?w=500&h=300&seed=4&format=webp" type="image/webp">
+            <img src="//localhost:8080/random/pizza?w=500&h=300&seed=4" alt="Image description" loading="lazy" width="500px" height="300px">
+          </picture>
+        </div>
+      </div>
+    
+      <div class="scurve-card">
+        <div class="scurve-card__content">
+          <h2 class="scurve-card__title">Squared image</h2>
+          <p class="scurve-card__description">To get an squared image you can just pass one of the values for width or height.</p>
+          <pre class="scurve-card__url"><a href="//localhost:8080/random/pizza?w=500" target="_blank">//localhost:8080/random/pizza?w=500</a></pre>
+          <pre class="scurve-card__url"><a href="//localhost:8080/random/pizza?h=500" target="_blank">//localhost:8080/random/pizza?h=500</a></pre>
+        </div>
+        <div class="scurve-card__image scurve-card__image--squared">
+          <picture>
+            <source srcset="//localhost:8080/random/pizza?w=500&seed=2&format=webp" type="image/webp">
+            <img src="//localhost:8080/random/pizza?w=500&seed=2" alt="Image description" loading="lazy" width="500px" height="500px">
+          </picture>
+        </div>
+      </div>
+    
+      <div class="scurve-card">
+        <div class="scurve-card__content">
+          <h2 class="scurve-card__title">Image Formats</h2>
+          <p class="scurve-card__description">This api allows you to specify the image format you want to be returned. Suported values are <em>png</em><em>jpg</em><em>jpeg</em> and <em>webp</em></p>
+          <pre class="scurve-card__url"><a href="//localhost:8080/random/pizza?format=webp" target="_blank">//localhost:8080/random/pizza?format=webp</a></pre>
+        </div>
+        <div class="scurve-card__image">
+          <picture>
+            <source srcset="//localhost:8080/random/pizza?w=500&h=300&seed=14&format=webp" type="image/webp">
+            <img src="//localhost:8080/random/pizza?w=500&h=300&seed=14" alt="Image description" loading="lazy" width="500px" height="300px">
+          </picture>
+        </div>
+      </div>
+    
+      <div class="scurve-card">
+        <div class="scurve-card__content">
+          <h2 class="scurve-card__title">Get images by it's <a href="https://unsplash.com/">unsplash</a> id</h2>
+          <p class="scurve-card__description">If you want to get an specific image from Unsplash, call the <em>/id</em> endpoint appended by the image's Unsplash id. This endpoint support the same parameters as the previous one.</p>
+          <pre class="scurve-card__url"><a href="//localhost:8080/id/22Vt7JIf7ZI?w=500&h=300" target="_blank">//localhost:8080/id/22Vt7JIf7ZI?w=500&h=300</a></pre>
+        </div>
+        <div class="scurve-card__image">
+          <picture>
+            <source srcset="//localhost:8080/id/22Vt7JIf7ZI?w=500&h=300&format=webp" type="image/webp">
+            <img src="//localhost:8080/id/22Vt7JIf7ZI?w=500&h=300" alt="Image description" loading="lazy" width="500px" height="300px">
+          </picture>
+        </div>
+      </div>
+    
+      <div class="scurve-card">
+        <div class="scurve-card__content">
+          <h2 class="scurve-card__title">The picture Element</h2>
+          <p class="scurve-card__description">One of the uses of this api is to get an image in different sizes depending the size of the screen. You can also get images in different formats and provide fallback options for browsers that don't support them.</p>
+        </div>
+        <div class="scurve-card__code">
+          <pre>
+            <code class="html">
+    &lt;picture&gt;
+      &lt;source media="(max-width: 740px)" srcset="//localhost:8080/random/pizza?w=740&h=444"&gt;
+      &lt;source media="(max-width: 980px)" srcset="//localhost:8080/random/pizza?w=980&h=588"&gt;
+      &lt;source media="(max-width: 1300px)" srcset="//localhost:8080/random/pizza?w=1300&h=780"&gt;
+      &lt;img src="//localhost:8080/random/pizza?w=1400&h=840" alt="Image description"&gt;
+    &lt;/picture&gt;
+            </code>
+          </pre>
+          <pre>
+            <code class="html">
+    &lt;picture&gt;
+      &lt;source srcset="//localhost:8080/random/pizza?format=webp" type="image/webp"&gt;
+      &lt;img src="//localhost:8080/random/pizza?format=jpeg" alt="Image description"&gt;
+    &lt;/picture&gt;
+            </code>
+          </pre>
+        </div>
+      </div>
+    
+      <div class="scurve-card">
+        <div class="scurve-card__content">
+          <h2 class="scurve-card__title">Get image info</h2>
+          <p class="scurve-card__description">If you want to get the information for an specific image, call the <em>/info</em> endpoint appended by the image's Unsplash id.</p>
+          <pre class="scurve-card__url"><a href="//localhost:8080/info/22Vt7JIf7ZI" target="_blank">//localhost:8080/info/22Vt7JIf7ZI</a></pre>
+        </div>
+        <div class="scurve-card__code">
+          <pre>
+            <code class="json">
+    {
+      "id": "22Vt7JIf7ZI",
+      "width": 6000,
+      "height": 4000,
+      "description": "a pneapple at the sea",
+      "links": "https://unsplash.com/photos/22Vt7JIf7ZI",
+      "author": "pizza Supply Co."
+    }
+            </code>
+          </pre>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <p class="footer__copyright">
+        Created by <a href="https://www.linkedin.com/in/david-bergmann/">David Bergmann</a> @ <a href="https://www.verndale.com/">Verndale</a>
+      </p>
+      <p class="footer__copyright">
+        Images provided by <a href="https://unsplash.com/">Unplash</a>
+      </p>
+    </div>
+  </footer>
+  
+  <!-- JavaScript -->
+  <script>
+    var ajax = new XMLHttpRequest();
+    ajax.open("GET", "/images/svgsheet.svg", true);
+    ajax.send();
+    ajax.onload = function() {
+        var div = document.createElement("div");
+        div.style.display = 'none';
+        div.innerHTML = ajax.responseText;
+        document.body.insertBefore( div, document.body.childNodes[0]);
+    }
+  </script>
+  <script src="/js/vendors~main.bundle.js"></script>
+  <script src="/js/main.bundle.js"></script>
+<noscript><link href="https://fonts.googleapis.com/css?family=Questrial" rel="stylesheet"></noscript>
+<noscript><link rel="stylesheet" href="/css/styles.css"></noscript>
+</body>
+</html>

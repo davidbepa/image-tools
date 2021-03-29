@@ -1,0 +1,51 @@
+.generic-content {
+  margin-bottom: rem(80px);
+  margin-top: rem(80px);
+
+  @include mq(tablet) {
+    margin-bottom: rem(160px);
+    margin-top: rem(120px);
+  }
+
+  .container {
+    max-width: rem(1100px);
+  }
+}
+
+.generic-content__image {
+  background-color: color("white");
+  box-shadow: rem(0 3px 15px -3px) color("tundora");
+  display: flex;
+  margin: rem(0 auto 35px);
+  max-width: rem(700px);
+  padding: rem(10px);
+
+  @include mq(tablet) {
+    margin-bottom: rem(50px);
+  }
+
+  picture,
+  img {
+    height: auto;
+    width: 100%;
+  }
+}
+
+.generic-content__description {
+  font-size: rem(20px);
+  text-align: center;
+
+  a {
+    color: color("elf-green");
+  }
+
+  p {
+    font-size: rem(18px);
+    line-height: rem(29px);
+
+    @include mq(tablet) {
+      font-size: rem(20px);
+      line-height: rem(34px);
+    }
+  }
+}

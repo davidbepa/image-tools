@@ -1,0 +1,24 @@
+.footer {
+  background-color: color("wild-sand");
+  padding: rem(20px 0 15px);
+  text-align: center;
+
+  @include mq(tablet) {
+    padding: rem(40px 0 30px);
+  }
+}
+
+.footer__copyright {
+  font-size: rem(12px);
+  margin: rem(0 0 2px);
+
+  @include mq(tablet) {
+    font-size: rem(14px);
+    margin-bottom: rem(5px);
+  }
+
+  a {
+    color: color("elf-green");
+    font-weight: 600;
+  }
+}
